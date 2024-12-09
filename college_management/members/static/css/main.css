@@ -14,6 +14,7 @@
     --default: rgb(255 0 51);
     --darkGrey: #555;
     --lightGrey: #888;
+    --actionBorder: #e9edf4;
 }
 
 a {
@@ -36,6 +37,41 @@ input {
 
 /*
 =========================
+GLOBAL
+MARK: Global
+=========================
+*/
+    #root .cmg-icon-wrapper {
+        display: flex !important;
+        gap: 10px;
+        align-items: center;
+    }
+
+    #root .cmg-icon {
+        font-size: 14px;
+    }
+
+    #root .cmg-dropdown {
+        position: absolute;
+        display: none;
+        top: 50px;
+        background: var(--default);
+        width: 200px;
+        left: 0;
+    }
+
+    #root .cmg-active-dropdown-item:hover {
+        display: block;
+        background: green;
+    }
+
+    #root .cmg-item-list {
+        padding: 10px;
+        text-align: center;
+    }
+
+/*
+=========================
 SIDEBAR
 MARK: Sidebar
 =========================
@@ -49,25 +85,25 @@ MARK: Sidebar
         padding: 10px;
     }
 
-    #root #cmg-sidebar .cmt-menu {
+    #root #cmg-sidebar .cmg-menu {
         height: 100%;
         overflow-y: auto;
     }
 
-    #root #cmg-sidebar .cmt-menu::-webkit-scrollbar {
+    #root #cmg-sidebar .cmg-menu::-webkit-scrollbar {
         width: 12px;
     }
-    #root #cmg-sidebar .cmt-menu::-webkit-scrollbar-track {
+    #root #cmg-sidebar .cmg-menu::-webkit-scrollbar-track {
         background: #f1f1f1;
     }
     
-    #root #cmg-sidebar .cmt-menu::-webkit-scrollbar-thumb {
+    #root #cmg-sidebar .cmg-menu::-webkit-scrollbar-thumb {
         background-color: #888;
         border-radius: 10px;
         border: 3px solid #f1f1f1;
     }
     
-    #root #cmg-sidebar .cmt-menu::-webkit-scrollbar-thumb:hover {
+    #root #cmg-sidebar .cmg-menu::-webkit-scrollbar-thumb:hover {
         background-color: var(--darkGrey);
     }
 
@@ -103,7 +139,7 @@ MARK: Sidebar
         color: var(--darkGrey);
     }
 
-    #cmg-sidebar .cmt-menu-item .submenu-heading {
+    #cmg-sidebar .cmg-menu-item .submenu-heading {
         display: flex;
         align-items: center;
         color: var( --default );
@@ -113,11 +149,11 @@ MARK: Sidebar
         text-transform: uppercase;
     }
 
-    #cmg-sidebar .cmt-submenu {
+    #cmg-sidebar .cmg-submenu {
         margin-bottom: 15px;
     }
 
-    #cmg-sidebar .cmt-menu-item .submenu-heading::after {
+    #cmg-sidebar .cmg-menu-item .submenu-heading::after {
         background: var( --default );
         content: "";
         height: 1px;
@@ -125,14 +161,15 @@ MARK: Sidebar
         width: 100%;
     }
 
-    #cmg-sidebar .cmt-menu-item .cmt-list-item a {
+    #cmg-sidebar .cmg-menu-item .cmg-list-item a {
         padding: 10px;
         display: block;
         color: var( --black );
         font-size: 14px;
     }
 
-    #cmg-sidebar .cmt-menu-item .cmt-list-item a:hover {
+    #cmg-sidebar .cmg-menu-item .cmg-list-item a:hover,
+    #cmg-sidebar .cmg-menu-item .cmg-list-item.active a {
         background: var( --default );
         color: var( --white );
     }
@@ -148,8 +185,8 @@ MARK: Sidebar
 
 /*
 =========================
-Main
-MARK: Main
+HEADER
+MARK: Header
 =========================
 */
     #root #cmg-main {
@@ -172,17 +209,22 @@ MARK: Main
         gap: 10px;
     }
 
-    #root .cmg-dropdown {
-        display: none;
-    }
-
     #cmg-header #header-search input[type="search"]{
-        border-radius: 3px;
-        border: 1px solid var(--lightGrey);
+        border-radius: 5px;
+        border: 1px solid var(--actionBorder);
         width: 300px;
     }
 
     #cmg-header .action {
         padding: 10px;
-        border: 1px solid var(--lightGrey);
+        border: 1px solid var(--actionBorder);
+        color: #515b73;
+        border-radius: 5px;
+    }
+
+    #cmg-header .action {
+        padding: 10px;
+        border: 1px solid var(--actionBorder);
+        color: #515b73;
+        border-radius: 5px;
     }
