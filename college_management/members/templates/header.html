@@ -1,58 +1,70 @@
+{% load static %}
 <header class="cmg-header" id="cmg-header">
-    <form action="" id="header-search">
-        <input type="search" name="search" id="search" placeholder="Search..."/>
-    </form>
-    <div class="cmg-header-actions">
-        <div class="action academic-year-wrapper">
-            <span class="cmg-active-dropdown-item active-academic-year">Academic Year: 2080</span>
-            <ul class="academic-year-dropdown cmg-dropdown">
-                <li class="cmg-list-item">Academic Year: 2080</li>
-                <li class="cmg-list-item">Academic Year: 2079</li>
-                <li class="cmg-list-item">Academic Year: 2078</li>
-            </ul>
-        </div>
-        <div class="action language-wrapper">
-            <span class="cmg-active-dropdown-item active-language">English</span>
-            <ul class="language-dropdown cmg-dropdown">
-                <li class="cmg-list-item">English</li>
-                <li class="cmg-list-item">Nepali</li>
-            </ul>
-        </div>
-        <div class="action add-new-wrapper">
-            <span class="cmg-active-dropdown-item add-new-icon"><i class="fa-regular fa-square-plus"></i></span>
-            <div class="dropdown-box cmg-dropdown">
-                <h2>Add New</h2>
-                <ul class="language-dropdown">
-                    <li class="cmg-list-item">
-                        <span><i class="fa-solid fa-plus"></i></span>
-                        <span>Student</span>
-                    </li>
-                    <li class="cmg-list-item">
-                        <span><i class="fa-solid fa-plus"></i></span>
-                        <span>Teachers</span>
-                    </li>
-                    <li class="cmg-list-item">
-                        <span><i class="fa-solid fa-plus"></i></span>
-                        <span>Staffs</span>
-                    </li>
-                    <li class="cmg-list-item">
-                        <span><i class="fa-solid fa-plus"></i></span>
-                        <span>Invoice</span>
-                    </li>
+    <div class="header">
+        <a href="{% url 'members' %}" class="logo-wrapper">
+            <figure class="image-wrapper">
+                <img src="{% static 'images/sscollege-logo.jpg' %}" alt="Shahid Smarak College Logo">
+            </figure>
+            <h2 class="header-title">Shahid Smarak College</h2>
+        </a>
+        <button class="canvas-icon"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div class="cmg-search-actions-wrapper">
+        <form action="" id="header-search">
+            <input type="search" name="search" id="search" placeholder="Search..."/>
+        </form>
+        <div class="cmg-header-actions">
+            <div class="action academic-year-wrapper">
+                <span class="cmg-active-dropdown-item active-academic-year">Academic Year: 2080</span>
+                <ul class="academic-year-dropdown cmg-dropdown">
+                    <li class="cmg-list-item active">Academic Year: 2080</li>
+                    <li class="cmg-list-item">Academic Year: 2079</li>
+                    <li class="cmg-list-item">Academic Year: 2078</li>
                 </ul>
             </div>
-        </div>
-        <div class="action dark-mode-wrapper">
-            <span class="dark-mode-icon"><i class="fa-regular fa-moon"></i></span>
-        </div>
-        <div class="action notification-wrapper">
-            <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
-        </div>
-        <div class="action message-wrapper">
-            <span class="message-icon"><i class="fa-regular fa-message"></i></span>
-        </div>
-        <div class="action user-wrapper">
-            <span class="user-icon"><i class="fa-regular fa-user"></i></span>
+            <div class="action language-wrapper">
+                <span class="cmg-active-dropdown-item active-language">English</span>
+                <ul class="language-dropdown cmg-dropdown">
+                    <li class="cmg-list-item active">English</li>
+                    <li class="cmg-list-item">Nepali</li>
+                </ul>
+            </div>
+            <div class="action add-new-wrapper">
+                <span class="cmg-active-dropdown-item"><i class="fa-regular fa-square-plus"></i></span>
+                <div class="dropdown-box cmg-dropdown">
+                    <h2>Add New</h2>
+                    <ul class="add-new-dropdown">
+                        <li class="cmg-list-item">
+                            <span class="add-new-icon student"><i class="fa-solid fa-graduation-cap"></i></span>
+                            <span>Student</span>
+                        </li>
+                        <li class="cmg-list-item">
+                            <span class="add-new-icon teacher"><i class="fa-solid fa-user-group"></i></span>
+                            <span>Teachers</span>
+                        </li>
+                        <li class="cmg-list-item">
+                            <span class="add-new-icon staff"><i class="fa-solid fa-users"></i></span>
+                            <span>Staffs</span>
+                        </li>
+                        <li class="cmg-list-item invoice">
+                            <span class="add-new-icon"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+                            <span>Invoice</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="action dark-mode-wrapper">
+                <span class="dark-mode-icon"><i class="fa-regular fa-moon"></i></span>
+            </div>
+            <div class="action notification-wrapper">
+                <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
+            </div>
+            <div class="action message-wrapper">
+                <span class="message-icon"><i class="fa-regular fa-message"></i></span>
+            </div>
+            <div class="action user-wrapper">
+                <span class="user-icon"><i class="fa-regular fa-user"></i></span>
+            </div>
         </div>
     </div>
 </header>

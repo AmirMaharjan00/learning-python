@@ -1,0 +1,360 @@
+{% load static %}
+<div class="dashboard-head">
+    <div class="dashboard-intro">
+        <h2 class="user-name">Admin Dashboard</h2>
+        <ul class="cmg-breadcrumb" id="cmg-breadcrumb">
+            <li class="breadcrumb-item">Dashboard</li>
+            <li class="breadcrumb-item">Admin Dashboard</li>
+        </ul>
+    </div>
+    <div class="dashboard-actions">
+        <button class="button-action add-student">
+            <span></span>
+            <span>Add New Student</span>
+        </button>
+        <button class="button-action fees">Fees Details</button>
+    </div>
+</div><!-- .dashboard-head -->
+<div class="dashboard-welcome">
+    <div class="welcome-wrapper">
+        <h2 class="welcome-label">Welcome Back, Mr. Herald</h2>
+        <span class="welcome-description">Have a Good Day at Work.</span>
+    </div>
+    <div class="update-wrapper">
+        <span class="reload-icon"><i class="fa-solid fa-arrows-rotate"></i></span>
+        <span class="update-label">Updated Recently on 15 June 2024</span>
+    </div>
+</div><!-- .dashboard-welcome -->
+<div class="dashboard-highlights">
+    <div class="highlight student">
+        <div class="highlight-head">
+            <figure class="highlight-thumb"><img src="{% static 'images/student.png' %}" alt="student"></figure>
+            <div class="highlight-info">
+                <span class="count total-count">3697</span>
+                <span class="label highlight-label">Total Students</span>
+            </div>
+        </div>
+        <div class="highlight-foot">
+            <div class="old-wrapper">
+                <span class="old-label">Old: </span>
+                <span class="old-count">3696</span>
+            </div>
+            <div class="new-wrapper">
+                <span class="new-label">New: </span>
+                <span class="new-count">1</span>
+            </div>
+        </div>
+    </div>
+    <div class="highlight teacher">
+        <div class="highlight-head">
+            <figure class="highlight-thumb"><img src="{% static 'images/teacher.png' %}" alt="teacher"></figure>
+            <div class="highlight-info">
+                <span class="count total-count">3697</span>
+                <span class="label highlight-label">Total Teachers</span>
+            </div>
+        </div>
+        <div class="highlight-foot">
+            <div class="old-wrapper">
+                <span class="old-label">Old: </span>
+                <span class="old-count">3696</span>
+            </div>
+            <div class="new-wrapper">
+                <span class="new-label">New: </span>
+                <span class="new-count">1</span>
+            </div>
+        </div>
+    </div>
+    <div class="highlight staff">
+        <div class="highlight-head">
+            <figure class="highlight-thumb"><img src="{% static 'images/staff.png' %}" alt="staff"></figure>
+            <div class="highlight-info">
+                <span class="count total-count">3697</span>
+                <span class="label highlight-label">Total Staffs</span>
+            </div>
+        </div>
+        <div class="highlight-foot">
+            <div class="old-wrapper">
+                <span class="old-label">Old: </span>
+                <span class="old-count">3696</span>
+            </div>
+            <div class="new-wrapper">
+                <span class="new-label">New: </span>
+                <span class="new-count">1</span>
+            </div>
+        </div>
+    </div>
+    <div class="highlight course">
+        <div class="highlight-head">
+            <figure class="highlight-thumb"><img src="{% static 'images/course.png' %}" alt="course"></figure>
+            <div class="highlight-info">
+                <span class="count total-count">3697</span>
+                <span class="label highlight-label">Total Courses</span>
+            </div>
+        </div>
+        <div class="highlight-foot">
+            <div class="old-wrapper">
+                <span class="old-label">Old: </span>
+                <span class="old-count">3696</span>
+            </div>
+            <div class="new-wrapper">
+                <span class="new-label">New: </span>
+                <span class="new-count">1</span>
+            </div>
+        </div>
+    </div>
+</div><!-- .dashboard-highlights -->
+<div class="fees-leave-request-wrapper" id="fees-leave-request-wrapper">
+    <div class="fees-collection-wrapper element">
+        <div class="head">
+            <span class="label">Fees Collection</span>
+            <div class="time-period-wrapper">
+                <span class="cmg-active-dropdown-item">Last 8 Quater</span>
+                <ul class="cmg-dropdown">
+                    <li class="cmg-list-item active">This Month</li>
+                    <li class="cmg-list-item">This Year</li>
+                    <li class="cmg-list-item">Last 12 Quater</li>
+                    <li class="cmg-list-item">Last 16 Quater</li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+
+        </div>
+    </div>
+    <div class="leave-requests-wrapper element">
+        <div class="head">
+            <span class="label">Leave Requests</span>
+            <div class="time-period-wrapper">
+                <span class="cmg-active-dropdown-item">Today</span>
+                <ul class="cmg-dropdown">
+                    <li class="cmg-list-item active">This Week</li>
+                    <li class="cmg-list-item">Last Week</li>
+                    <li class="cmg-list-item">This Month</li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="leave-request">
+                <div class="leave-applicant">
+                    <figure class="applicant-thumb"><img src="" alt=""></figure>
+                    <div class="applicant-info">
+                        <div class="name-type-wrapper">
+                            <h2 class="applicant">Ramien</h2>
+                            <span class="application-type">Casual</span>
+                        </div>
+                        <span class="applicant-post">Accountant</span>
+                    </div>
+                    <div class="applicant-request">
+                        <button class="request request-accept"><i class="fa-solid fa-check-double"></i></button>
+                        <button class="request request-reject"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+                <div class="leave-date">
+                    <div class="action leave-wrapper">
+                        <span class="leave-label">Leave: </span>
+                        <span class="leave">12 - 13 May</span>
+                    </div>
+                    <div class="action apply-wrapper">
+                        <span class="apply-label">Apply on : </span>
+                        <span class="apply-date">12 May</span>
+                    </div>
+                </div>
+            </div>
+            <div class="leave-request">
+                <div class="leave-applicant">
+                    <figure class="applicant-thumb"><img src="" alt=""></figure>
+                    <div class="applicant-info">
+                        <div class="name-type-wrapper">
+                            <h2 class="applicant">James</h2>
+                            <span class="application-type">Emergency</span>
+                        </div>
+                        <span class="applicant-post">Physics Teacher</span>
+                    </div>
+                    <div class="applicant-request">
+                        <button class="request request-accept"><i class="fa-solid fa-check-double"></i></button>
+                        <button class="request request-reject"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+                <div class="leave-date">
+                    <div class="action leave-wrapper">
+                        <span class="leave-label">Leave: </span>
+                        <span class="leave">12 - 13 May</span>
+                    </div>
+                    <div class="action apply-wrapper">
+                        <span class="apply-label">Apply on : </span>
+                        <span class="apply-date">12 May</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- #fees-leave-request-wrapper -->
+<div id="dashboard-links" class="dashboard-links">
+    <div class="link">
+        <span class="link-icon"><i class="fa-solid fa-calendar-days"></i></span>
+        <span class="link-label">View Attendence</span>
+        <span class="link-view-more"><i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+    <div class="link">
+        <span class="link-icon"><i class="fa-solid fa-icons"></i></span>
+        <span class="link-label">New Events</span>
+        <span class="link-view-more"><i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+    <div class="link">
+        <span class="link-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+        <span class="link-label">Complaints</span>
+        <span class="link-view-more"><i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+    <div class="link">
+        <span class="link-icon"><i class="fa-solid fa-coins"></i></span>
+        <span class="link-label">Finance & Accounts</span>
+        <span class="link-view-more"><i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+</div><!-- #dashboard-links -->
+<div class="dashboard-earnings" id="dashboard-earnings">
+    <div class="finance-wrapper">
+        <div class="finance total-earnings-wrapper">
+            <div class="total-earnings">
+                <div class="finance-head">
+                    <span class="finance-label">Total Earnings</span>
+                    <h2 class="finance-number">$64, 522,24</h2>
+                </div>
+                <span class="finance-icon"><i class="fa-solid fa-sack-dollar"></i></span>
+            </div>
+            <div class="diagram"></div>
+        </div>
+        <div class="finance total-expenses-wrapper">
+            <div class="total-earnings">
+                <div class="finance-head">
+                    <span class="finance-label">Total Expenses</span>
+                    <h2 class="finance-number">$60,522,24</h2>
+                </div>
+                <span class="finance-icon"><i class="fa-solid fa-sack-dollar"></i></span>
+            </div>
+            <div class="diagram"></div>
+        </div>
+    </div>
+    <div class="notice-board">
+        <div class="head">
+            <h2 class="label">Leave Requests</h2>
+            <button class="view-all">
+                <span class="button-label">View All</span>
+                <span class="button-icon"><i class="fa-solid fa-chevron-right"></i></span>
+            </button>
+        </div>
+        <div class="foot">
+            <div class="notice">
+                <span class="notice-icon"><i class="fa-regular fa-flag"></i></span>
+                <div class="notice-main">
+                    <span class="notice-title">New Syllabus Instructions</span>
+                    <div class="notice-date-wrapper">
+                        <span class="notice-date-label">
+                            <span class="notice-date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            <span class="notice-date-added">Added on: </span>
+                        </span>
+                        <span class="notice-date">11 March 2024</span>
+                    </div>
+                </div>
+                <span class="notice-duration">20 Days</span>
+            </div>
+            <div class="notice">
+                <span class="notice-icon"><i class="fa-regular fa-flag"></i></span>
+                <div class="notice-main">
+                    <span class="notice-title">New Syllabus Instructions</span>
+                    <div class="notice-date-wrapper">
+                        <span class="notice-date-label">
+                            <span class="notice-date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            <span class="notice-date-added">Added on: </span>
+                        </span>
+                        <span class="notice-date">11 March 2024</span>
+                    </div>
+                </div>
+                <span class="notice-duration">20 Days</span>
+            </div>
+            <div class="notice">
+                <span class="notice-icon"><i class="fa-regular fa-flag"></i></span>
+                <div class="notice-main">
+                    <span class="notice-title">New Syllabus Instructions</span>
+                    <div class="notice-date-wrapper">
+                        <span class="notice-date-label">
+                            <span class="notice-date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            <span class="notice-date-added">Added on: </span>
+                        </span>
+                        <span class="notice-date">11 March 2024</span>
+                    </div>
+                </div>
+                <span class="notice-duration">20 Days</span>
+            </div>
+            <div class="notice">
+                <span class="notice-icon"><i class="fa-regular fa-flag"></i></span>
+                <div class="notice-main">
+                    <span class="notice-title">New Syllabus Instructions</span>
+                    <div class="notice-date-wrapper">
+                        <span class="notice-date-label">
+                            <span class="notice-date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            <span class="notice-date-added">Added on: </span>
+                        </span>
+                        <span class="notice-date">11 March 2024</span>
+                    </div>
+                </div>
+                <span class="notice-duration">20 Days</span>
+            </div>
+            <div class="notice">
+                <span class="notice-icon"><i class="fa-regular fa-flag"></i></span>
+                <div class="notice-main">
+                    <span class="notice-title">New Syllabus Instructions</span>
+                    <div class="notice-date-wrapper">
+                        <span class="notice-date-label">
+                            <span class="notice-date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            <span class="notice-date-added">Added on: </span>
+                        </span>
+                        <span class="notice-date">11 March 2024</span>
+                    </div>
+                </div>
+                <span class="notice-duration">20 Days</span>
+            </div>
+        </div>
+    </div>
+    <div class="finance-details">
+        <div class="collection">
+            <div class="collection-details">
+                <span class="label">Total Fees Collected</span>
+                <h2 class="money">$25,000,02</h2>
+            </div>
+            <div class="collection-percent">
+                <span class="icon"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                <span class="percent">1.2%</span>
+            </div>
+        </div>
+        <div class="collection">
+            <div class="collection-details">
+                <span class="label">Fine Collected Till Date</span>
+                <h2 class="money">$25,000,02</h2>
+            </div>
+            <div class="collection-percent">
+                <span class="icon"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                <span class="percent">1.2%</span>
+            </div>
+        </div>
+        <div class="collection">
+            <div class="collection-details">
+                <span class="label">Student Not Paid</span>
+                <h2 class="money">$25,000,02</h2>
+            </div>
+            <div class="collection-percent">
+                <span class="icon"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                <span class="percent">1.2%</span>
+            </div>
+        </div>
+        <div class="collection">
+            <div class="collection-details">
+                <span class="label">Total Outstanding</span>
+                <h2 class="money">$25,000,02</h2>
+            </div>
+            <div class="collection-percent">
+                <span class="icon"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+                <span class="percent">1.2%</span>
+            </div>
+        </div>
+    </div>
+</div><!-- #dashboard-earnings -->

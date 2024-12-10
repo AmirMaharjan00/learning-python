@@ -13,8 +13,11 @@
 </head>
 <body>
     <div id="root" class="home inside">
-        {% include 'sidebar.html' %}
-        {% include 'main.html' %}
+        {% include 'header.html' %}
+        <div class="cmg-body" id="cmg-body">
+            {% include 'main.html' %}
+            {% include 'sidebar.html' %}
+        </div>
     </div>
 </body>
 </html>
