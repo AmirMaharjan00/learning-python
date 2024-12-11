@@ -709,6 +709,7 @@ MARK: Admin Dashboard
         flex-direction: column;
         width: 350px;
         gap: 10px;
+        height: 400px;
     }
 
     #dashboard-earnings .finance-details .collection {
@@ -810,16 +811,152 @@ MARK: Admin Dashboard
     }
 
     #dashboard-earnings .notice-board .foot .notice .notice-icon {
-        padding: 10px;
+        padding: 7px 10px;
         color: #3d5ee1;
         background: #3d5ee13f;
         border-radius: 50%;
+        font-size: 12px;
     }
 
     #dashboard-earnings .notice-board .foot .notice .notice-main {
         flex: 1;
     }
 
-    #dashboard-earnings .notice-board .foot .notice .notice-duration {
-        
+    #dashboard-earnings .notice-board .foot .notice .notice-title {
+        margin-bottom: 5px;
     }
+
+    #dashboard-earnings .notice-board .foot .notice .notice-title {
+        margin-bottom: 5px;
+    }
+
+    #dashboard-earnings .notice-board .foot .notice .notice-date-icon {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    #dashboard-earnings .notice-board .foot .notice .notice-date-label,
+    #dashboard-earnings .notice-board .foot .notice .notice-date {
+        font-size: 14px;
+        color: var(--lightGrey);
+    }
+
+    #dashboard-earnings .notice-board .foot .notice .notice-duration {
+        background: var(--lightGrey);
+        padding: 5px;
+        border-radius: 5px;
+        color: var(--white);
+        font-size: 14px;
+    }
+
+    #dashboard-foot {
+        display: flex;
+        gap: 20px;
+    }
+
+    #dashboard-foot .dashboard-foot-item {
+        flex: 1;
+        box-shadow: 0px 0px 10px 0px #0000001f;
+        border-radius: 5px;
+    }
+
+    #dashboard-foot .dashboard-foot-item .head {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        border-bottom: 1px solid var(--actionBorder);
+    }
+
+    #dashboard-foot .dashboard-foot-item .head .label {
+        font-weight: 600;
+    }
+
+    #dashboard-foot .dashboard-foot-item .head .dropdown {
+        position: relative;
+    }
+
+    #dashboard-foot .dashboard-foot-item .head .dropdown .cmg-dropdown {
+        right: -20px;
+        left: unset;
+        transform: none;
+        top: 30px;
+    }
+
+    #dashboard-foot .dashboard-foot-item .foot {
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    #dashboard-foot .subject-completion .foot .subject-lists {
+        border: 1px solid var(--actionBorder);
+        border-radius: 5px;
+    }
+
+    #dashboard-foot .subject-completion .foot .subject {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        padding: 0 10px;
+        gap: 20px;
+    }
+
+    #dashboard-foot .subject-completion .foot .subject:not(:last-child) {
+        border-bottom: 1px solid var(--actionBorder);
+    }
+
+    #dashboard-foot .subject-completion .foot .subject .subject-label {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    #dashboard-foot .subject-completion .foot .subject .completion {
+        flex: 1;
+        height: 6px;
+        width: 100%;
+        background: var(--lightGrey);
+        border-radius: 10px;
+    }
+
+    #dashboard-foot .subject-completion .foot .subject .partial {
+        height: 6px;
+        width: 20%;
+        background: blue;
+        border-radius: 10px;
+    }
+
+    #dashboard-foot .student-activity .activity {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        border: 1px solid var(--actionBorder);
+        border-radius: 5px;
+    }
+
+    #dashboard-foot .student-activity .activity:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    #dashboard-foot .student-activity .activity .image-thumb {
+        height: 40px;
+        width: 40px;
+        background: var(--actionBorder);
+    }
+
+    #dashboard-foot .student-activity .activity .activity-label,
+    #dashboard-foot .student-activity .activity .activity-venue {
+        display: block;
+        font-size: 14px;
+    }
+
+    #dashboard-foot .student-activity .activity .activity-venue {
+        color: var(--lightGrey);
+        margin-top: 5px;
+    }
+
+    /* #dashboard-foot .to-do-list {
+        flex: 1;
+    } */
